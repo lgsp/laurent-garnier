@@ -1,0 +1,18 @@
+<h1>Convert Text Into Speech</h1>
+<h1>Convertis du texte en paroles</h1>
+
+<script type="text/javascript"
+	src="https://code.responsivevoice.org/responsivevoice.js"></script>
+
+<h2>Ecris du texte en anglais puis cliques sur le bouton</h2>
+<textarea id="text" rows="5" cols="100"></textarea></br>
+
+<input onclick="speakText();" type="button" value="Speak">
+
+<script>
+  function speakText(){
+      var text = document.getElementById('text').value;
+      responsiveVoice.speak(text);
+      //alert('speak successful');
+  }
+</script>
